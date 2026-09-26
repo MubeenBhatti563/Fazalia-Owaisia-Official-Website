@@ -1,0 +1,48 @@
+import { CommitteeMember } from "@/types";
+
+export const initialCommitteeMembers: CommitteeMember[] = [
+  {
+    id: 1,
+    name_ur: "الحاج پیر صاحب دامت برکاتہم",
+    name_en: "Al-Haj Pir Sahib (Chief Patron)",
+    role_ur: "سرپرستِ اعلیٰ آستانہ عالیہ",
+    role_en: "Chief Patron & Spiritual Guide",
+    phone: "0300-1112233",
+    whatsapp: "923001112233",
+    tag_ur: "سرپرست",
+    tag_en: "Patron",
+  },
+  {
+    id: 2,
+    name_ur: "چوہدری / ملک صاحب",
+    name_en: "Chaudhry / Malik Sahib",
+    role_ur: "صدرِ انتظامی کمیٹی و فوکل پرسن",
+    role_en: "President Organizing Committee",
+    phone: "0301-2223344",
+    whatsapp: "923012223344",
+    tag_ur: "صدر",
+    tag_en: "President",
+  },
+  {
+    id: 3,
+    name_ur: "سیکرٹری اطلاعات و سوشل میڈیا",
+    name_en: "Media & IT Coordinator",
+    role_ur: "انچارج نشریات و سوشل میڈیا",
+    role_en: "Head of Digital Media & Broadcast",
+    phone: "0302-3334455",
+    whatsapp: "923023334455",
+    tag_ur: "میڈیا",
+    tag_en: "Media",
+  },
+  {
+    id: 4,
+    name_ur: "انچارج لنگر و مہمان نوازی",
+    name_en: "Langar & Hospitality Lead",
+    role_ur: "نگرانِ ضیافت و استقبالیہ کمیٹی",
+    role_en: "Hospitality & Guest Coordinator",
+    phone: "0303-4445566",
+    whatsapp: "923034445566",
+    tag_ur: "ضیافت",
+    tag_en: "Hospitality",
+  },
+];
