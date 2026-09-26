@@ -7,12 +7,21 @@
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
     -webkit-text-size-adjust: 100%;
+    /* Keep wide decorative elements and long RTL/LTR content from creating a
+       horizontal page canvas on small screens. `hidden` is the fallback for
+       browsers that do not support `clip`. */
+    overflow-x: hidden;
+    overflow-x: clip;
+    overscroll-behavior-x: none;
   }
 
   body {
     background-color: #f8fafc;
     color: #0b1524;
     overflow-x: hidden;
+    overflow-x: clip;
+    max-width: 100%;
+    overscroll-behavior-x: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

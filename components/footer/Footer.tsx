@@ -73,7 +73,7 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-white/10">
           {/* Brand Column */}
           <div className="md:col-span-6 flex flex-col items-start text-start">
-            <Link href="#top" className="flex items-center gap-3 mb-5 group">
+            <Link href="#top" className="flex min-w-0 max-w-full items-center gap-3 mb-5 group">
               <div className="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-gold-500 to-gold-300 shadow-md">
                 <div className="w-full h-full rounded-full overflow-hidden bg-navy-950 flex items-center justify-center">
                   <Image
@@ -86,11 +86,11 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
                 </div>
               </div>
 
-              <div className="flex items-baseline gap-1.5 whitespace-nowrap">
-                <span className="text-xl font-black text-white group-hover:text-gold-300 transition-colors">
+              <div className="flex min-w-0 items-baseline gap-1.5 whitespace-nowrap overflow-hidden">
+                <span className="min-w-0 truncate text-xl font-black text-white group-hover:text-gold-300 transition-colors">
                   {brandName}
                 </span>
-                <span className="text-xs font-bold text-gold-400 uppercase px-1.5 py-0.5 rounded bg-gold-400/10 border border-gold-400/30">
+                <span className="hidden min-[380px]:inline text-xs font-bold text-gold-400 uppercase px-1.5 py-0.5 rounded bg-gold-400/10 border border-gold-400/30">
                   {brandSuffix}
                 </span>
               </div>

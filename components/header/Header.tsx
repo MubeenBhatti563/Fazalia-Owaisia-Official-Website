@@ -96,11 +96,11 @@ export const Header: React.FC<HeaderProps> = ({ config }) => {
           : "bg-navy-900/90 backdrop-blur-sm border-b border-navy-800 py-3.5"
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
         {/* Brand: Strictly One Line Title */}
         <Link
           href="/"
-          className="flex items-center gap-3 group focus:outline-none"
+          className="flex min-w-0 flex-1 items-center gap-3 group focus:outline-none"
           aria-label={isUrdu ? config.brandFull_ur : config.brandFull_en}
         >
           <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full p-0.5 bg-gradient-to-tr from-gold-500 to-gold-300 shadow-md group-hover:scale-105 transition-transform duration-200">
@@ -116,11 +116,11 @@ export const Header: React.FC<HeaderProps> = ({ config }) => {
             </div>
           </div>
 
-          <div className="flex items-baseline gap-1.5 whitespace-nowrap">
-            <span className="text-lg sm:text-xl md:text-2xl font-black text-white group-hover:text-gold-300 transition-colors tracking-tight">
+          <div className="flex min-w-0 items-baseline gap-1.5 whitespace-nowrap overflow-hidden">
+            <span className="min-w-0 truncate text-lg sm:text-xl md:text-2xl font-black text-white group-hover:text-gold-300 transition-colors tracking-tight">
               {brandName}
             </span>
-            <span className="text-xs sm:text-sm font-bold text-gold-400 tracking-wide uppercase px-1.5 py-0.5 rounded bg-gold-400/10 border border-gold-400/30">
+            <span className="hidden min-[380px]:inline text-xs sm:text-sm font-bold text-gold-400 tracking-wide uppercase px-1.5 py-0.5 rounded bg-gold-400/10 border border-gold-400/30">
               {brandSuffix}
             </span>
           </div>
@@ -146,7 +146,7 @@ export const Header: React.FC<HeaderProps> = ({ config }) => {
         </nav>
 
         {/* Actions: Desktop Language Switcher & Mobile Menu Trigger */}
-        <div className="flex items-center gap-3">
+        <div className="flex flex-shrink-0 items-center gap-3">
           <div className="hidden sm:block">
             <LanguageSwitcher />
           </div>
