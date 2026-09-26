@@ -14,7 +14,7 @@ export const SocialHubSection: React.FC<SocialHubSectionProps> = ({ channels }) 
   const { t } = useLanguage();
 
   return (
-    <section id="social" className="py-20 sm:py-24 bg-navy-950 border-b border-navy-800 text-white relative">
+    <section id="social" className="relative overflow-hidden py-20 sm:py-24 bg-navy-950 border-b border-navy-800 text-white">
       {/* Background glow accents */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-navy-700/20 rounded-full blur-3xl pointer-events-none" />

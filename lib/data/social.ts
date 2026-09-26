@@ -70,7 +70,7 @@ export const initialSocialChannels: SocialChannel[] = [
     name: "WhatsApp Community",
     handle: "Fazalia Owaisia Official",
     url:
-      "https://wa.me/923000000000?text=" +
+      "https://wa.me/923008536856?text=" +
       encodeURIComponent("السلام علیکم! مجھے فضلیہ اویسیہ کے آفیشل واٹس ایپ چینل / گروپ میں شامل فرمائیں۔"),
     color: "#25d366",
     gradient: "linear-gradient(135deg, #25d366, #128c7e)",

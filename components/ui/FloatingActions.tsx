@@ -39,7 +39,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ whatsappNumber
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 inset-inline-start-6 z-40 inline-flex items-center gap-2.5 px-4 sm:px-5 py-3 rounded-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+        className="fixed bottom-6 left-6 z-40 inline-flex items-center gap-2.5 px-4 sm:px-5 py-3 rounded-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
         aria-label="WhatsApp Contact"
       >
         <WhatsAppIcon size={22} className="group-hover:scale-110 transition-transform" />
@@ -51,7 +51,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ whatsappNumber
         type="button"
         onClick={scrollToTop}
         className={cn(
-          "fixed bottom-6 inset-inline-end-6 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-navy-900/90 hover:bg-gold-500 text-gold-400 hover:text-navy-950 border border-gold-400/50 flex items-center justify-center shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold-400",
+          "fixed bottom-6 right-6 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-navy-900/90 hover:bg-gold-500 text-gold-400 hover:text-navy-950 border border-gold-400/50 flex items-center justify-center shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold-400",
           showBackToTop
             ? "opacity-100 translate-y-0 visible"
             : "opacity-0 translate-y-4 invisible pointer-events-none"

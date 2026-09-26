@@ -23,8 +23,8 @@ export const siteConfig: SiteConfig = {
   contact: {
     phone: "+92 300 0000000",
     phoneDisplay: "+92 300 0000000",
-    whatsapp: "923000000000",
-    whatsappDisplay: "+92 300 0000000",
+    whatsapp: "923008536856",
+    whatsappDisplay: "+92 300 8536856",
     email: "fazaliaowaisiaofficial@gmail.com",
     address_ur: "مرکزی جامع مسجد و آستانہ عالیہ فضلیہ اویسیہ، ہمارا گاؤں، پاکستان",
     address_en: "Central Jamia Masjid & Astana Fazalia Owaisia, Our Village, Pakistan",
